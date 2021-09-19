@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>@ViewData["name"]</h1>
+
+
+@foreach (Product prod in Model)
+{
+<div>
+    <p>@prod.id</p> <br />
+    <p>@prod.name</p> <br />
+    <p>@prod.description</p> <br />
+    <p>@prod.price</p> <br />
+    <p>@prod.category</p>
+</div>
+    
+
+}
+
